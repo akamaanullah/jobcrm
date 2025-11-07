@@ -1,0 +1,334 @@
+/* Invoice Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    /* padding: 20px; */
+}
+
+.invoice-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Header Section */
+.invoice-header {
+    border-radius: 0px 0px 73px 0px;
+    background:#183655;
+    color: white;
+    padding: 20px;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    /* background: #f97316; */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.logo-image {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    position: relative;
+    z-index: 2;
+}
+
+.company-name {
+    font-family: 'Cinzel', serif;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.header-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100%;
+}
+
+.orange-curve {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 380%;
+    height: 45%;
+    background: #f97316;
+    border-radius: 0 0 0 100px;
+    /* opacity: 0.8; */
+}
+
+/* Invoice Title Section */
+.invoice-title-section {
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* border-bottom: 2px solid #e5e7eb; */
+}
+
+.invoice-title h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #1f2937;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.contact-info {
+    text-align: right;
+    line-height: 1.6;
+}
+
+.contact-info p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #374151;
+}
+
+/* Invoice Details */
+.invoice-details {
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* background: #f9fafb; */
+}
+
+.client-info h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #1f2937;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.client-info p {
+    margin: 3px 0;
+    font-weight: 500;
+    font-size: 16px;
+    color: #374151;
+}
+
+
+.invoice-meta p {
+    margin: 0px 0px 5px 0px;
+    font-size: 16px;
+    color: #374151;
+}
+
+/* Services Table */
+.services-table {
+    padding: 50px 20px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0;
+    border: 1px solid #d1d5db;
+}
+
+.table-header {
+    background: #183655 !important;
+    color: white !important;
+}
+
+.table-header th {
+    padding: 15px 10px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 1px solid rgba(255,255,255,0.3);
+}
+
+.table tbody tr {
+    border-bottom: 1px solid #d1d5db;
+}
+
+.table tbody td {
+    padding: 12px 10px;
+    font-size: 14px;
+    color: #374151;
+    vertical-align: top;
+    border: 1px solid #d1d5db;
+    border-top: none;
+}
+
+/* Align numbers to right */
+.table tbody td:nth-child(1),
+.table tbody td:nth-child(3),
+.table tbody td:nth-child(4),
+.table tbody td:nth-child(5) {
+    text-align: center;
+}
+
+/* Description row styling */
+.description-row td {
+    font-size: 12px;
+    color: #6b7280;
+    line-height: 1.4;
+}
+
+.description-row td:first-child {
+    border-left: 1px solid #d1d5db;
+    border-right: 1px solid #d1d5db;
+}
+
+/* Total row styling */
+.total-row {
+    /* background: #f3f4f6 !important; */
+    border-top: 2px solid #d1d5db;
+}
+
+.total-row td {
+    font-weight: bold;
+    font-size: 16px;
+    color: #1f2937;
+    padding: 15px 10px;
+    border: 1px solid #d1d5db;
+}
+
+.total-row td:nth-child(4),
+.total-row td:nth-child(5) {
+    text-align: center;
+}
+
+/* Footer */
+.invoice-footer {
+    background: linear-gradient(to bottom, white 50%, #e5e7eb 50%);
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-top: 1px solid #e5e7eb;
+    min-height: 120px;
+}
+
+.footer-left {
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-left h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #1f2937;
+    margin-bottom: 10px;
+}
+
+.footer-left p {
+    font-weight: 500;
+    margin: 3px 0;
+    font-size: 14px;
+    color: #374151;
+}
+
+.footer-image {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+/* Print Styles */
+@media print {
+    body {
+        background: white;
+        padding: 0;
+    }
+    
+    .invoice-container {
+        box-shadow: none;
+        border-radius: 0;
+        max-width: none;
+    }
+    
+    .invoice-header {
+        background: #1e3a8a !important;
+        -webkit-print-color-adjust: exact;
+        color-adjust: exact;
+    }
+    
+    .table-header {
+        background: #1e3a8a !important;
+        -webkit-print-color-adjust: exact;
+        color-adjust: exact;
+    }
+    
+    .orange-curve {
+        background: #f97316 !important;
+        -webkit-print-color-adjust: exact;
+        color-adjust: exact;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .invoice-title-section {
+        flex-direction: column;
+        gap: 0px;
+    }
+    .orange-curve{
+        width: 180%;
+        height: 40%;
+    }
+    
+    .contact-info {
+        text-align: left;
+    }
+    
+    .invoice-details {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .invoice-meta {
+        text-align: left;
+    }
+    
+    .invoice-footer {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    
+    .table {
+        font-size: 12px;
+    }
+    
+    .table-header th,
+    .table tbody td {
+        padding: 8px 5px;
+    }.company-name {
+        font-size: 19px;
+    }
+    
+}

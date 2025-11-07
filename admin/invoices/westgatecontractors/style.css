@@ -1,0 +1,266 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    color: black;
+    line-height: 1.4;
+}
+
+.invoice-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-image: url('assets/images/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Header Section */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.company-info {
+    flex: 1;
+}
+
+.company-name {
+    font-family: 'Times New Roman', serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
+}
+
+.contact-details p {
+    font-size: 14px;
+    color: black;
+    margin-bottom: 5px;
+}
+
+/* Logo Section */
+.logo-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.company-logo {
+    max-width: 120px;
+    max-height: 150px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Invoice Title */
+.invoice-title {
+    font-family: 'Georgia', 'Cambria', serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+
+/* Client Information Table */
+.client-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid black;
+    margin-bottom: 20px;
+    background-color: transparent;
+}
+
+.client-table td {
+    padding: 5px;
+    border: 1px solid black;
+    vertical-align: top;
+}
+
+.client-table .label {
+    font-weight: bold;
+    color: black;
+    text-align: left;
+    width: 50%;
+}
+
+.client-table .value {
+    color: black;
+    text-align: left;
+    font-weight: normal;
+    width: 50%;
+}
+
+/* Invoice Details */
+.invoice-details {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 25px;
+}
+
+.detail-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.detail-row .label {
+    font-weight: bold;
+    color: black;
+}
+
+.value-box {
+    border: 2px solid black;
+    padding: 8px 15px;
+    background-color: white;
+    color: black;
+    font-weight: normal;
+}
+
+/* Table Styles */
+.table-container {
+    margin-bottom: 30px;
+}
+
+.invoice-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid black;
+}
+
+.invoice-table th,
+.invoice-table td {
+    border: 1px solid black;
+    padding: 12px 8px;
+    text-align: left;
+}
+
+/* Main Header */
+.main-header th {
+    background-color: #4A8C9B;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.main-header th:first-child {
+    text-align: ledt;
+}
+
+.main-header th:last-child {
+    text-align: center;
+}
+
+/* Sub Header */
+.sub-header th {
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.sub-header th:nth-child(3),
+.sub-header th:nth-child(4) {
+    text-align: center;
+}
+
+/* Table Body */
+.invoice-table tbody td {
+    background-color: transparent;
+    color: black;
+    text-align: center;
+}
+
+.invoice-table tbody td:nth-child(2) {
+    text-align: center;
+}
+
+.invoice-table tbody td:nth-child(3),
+.invoice-table tbody td:nth-child(4) {
+    text-align: center;
+}
+
+/* Table Footer */
+.subtotal-row td,
+.total-row td {
+    background-color: transparent;
+    border-top: 1px solid black;
+    text-align: center;
+}
+
+.subtotal-label,
+.total-label {
+    text-align: center;
+    font-weight: bold;
+}
+
+.subtotal-amount,
+.total-amount {
+    text-align: right;
+    font-weight: bold;
+}
+
+/* Payment Section */
+.payment-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.payment-label {
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+}
+
+.payment-box {
+    border: 2px solid black;
+    padding: 8px 15px;
+    background-color: transparent;
+    color: black;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-section {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .invoice-details {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .client-row {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .invoice-table {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,258 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    line-height: 1.4;
+}
+
+/* Invoice Container */
+.invoice-container {
+    max-width: 661px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+/* Header Section */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    height: 100px;
+    width: 150px;
+    object-fit: contain;
+}
+
+.company-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.company-main {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+    line-height: 1;
+}
+
+.company-accent {
+    font-size: 24px;
+    font-weight: bold;
+    color: #00BFFF;
+    line-height: 1;
+}
+
+.invoice-details {
+    text-align: right;
+    font-size: 18px;
+}
+
+.invoice-number {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.invoice-date {
+    color: #333333;
+}
+
+/* Billing Section */
+.billing-section {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.billing-left {
+    flex: 1;
+}
+
+.billing-label {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.billing-address {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.billing-address div {
+    margin-bottom: 2px;
+}
+
+.billing-section .invoice-details {
+    text-align: right;
+    font-size: 18px;
+    margin-top: 0;
+}
+
+.billing-section .invoice-number {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.billing-section .invoice-date {
+    color: #333333;
+}
+
+/* Table Container */
+.table-container {
+    margin-bottom: 30px;
+}
+
+.items-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 18px;
+}
+
+.items-table thead {
+    border-bottom: 1px solid #000000;
+}
+
+.items-table th {
+    text-align: left;
+    padding: 10px 0;
+    font-weight: normal;
+    border-bottom: 1px solid #000000;
+}
+
+.items-table tbody tr {
+    border-bottom: 1px solid #000000;
+}
+
+.items-table td {
+    padding: 10px 0;
+    vertical-align: top;
+}
+
+.item-col {
+    width: 50%;
+}
+
+.qty-col {
+    width: 15%;
+}
+
+.price-col {
+    width: 17.5%;
+}
+
+.total-col {
+    width: 17.5%;
+}
+
+/* Summary Section */
+.summary-section {
+    text-align: right;
+    margin-bottom: 30px;
+}
+
+.subtotal {
+    font-size: 14px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #000000;
+}
+
+.total {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Footer */
+.footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 36px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.footer-left {
+    font-weight: normal;
+}
+
+.footer-right {
+    font-weight: normal;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .invoice-container {
+        padding: 15px;
+    }
+
+    .header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .invoice-details {
+        text-align: left;
+    }
+
+    .logo-section {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .company-name {
+        flex-direction: row;
+        gap: 5px;
+    }
+
+    .items-table {
+        font-size: 12px;
+    }
+
+    .items-table th,
+    .items-table td {
+        padding: 8px 0;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .items-table {
+        font-size: 11px;
+    }
+
+    .company-main,
+    .company-accent {
+        font-size: 20px;
+    }
+
+    .logo {
+        height: 60px;
+        width: 60px;
+    }
+}
